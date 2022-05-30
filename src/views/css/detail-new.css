@@ -1,0 +1,11 @@
+.content-new {
+  margin: 40px 160px;
+  text-align: center;
+}
+
+.content {
+  text-align: left;
+  font-family: 400;
+  font-size: 16px;
+  white-space: pre-line;
+}

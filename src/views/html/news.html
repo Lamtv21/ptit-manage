@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/share.css" />
+    <link rel="stylesheet" href="css/news.css" />
+    <link rel="stylesheet" href="css/user-management.css" />
+    <title>Quản lý user</title>
+  </head>
+  <body>
+    <div class="contain">
+      <ul class="menu">
+        <li class="home">
+          <a href="/home">Trang chủ</a>
+        </li>
+        <li class="profile">
+          <a href="/profile">Thông tin cá nhân</a>
+        </li>
+        <li class="users">
+          <a href="/user-management">Quản lý tài khoản</a>
+        </li>
+        <li class="news">
+          <a href="/news">Quản lý bài viết</a>
+        </li>
+        <li onclick="logout()" class="logout">
+          <a href="">Đăng xuất</a>
+        </li>
+      </ul>
+      <div class="main">
+        <div class="heading">
+          <p class="title">Danh sách bài viết</p>
+          <a href="/add-new" class="add-user"><i class="fa fa-file-text" aria-hidden="true"></i> Thêm mới</a>
+        </div>
+        <table></table>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.pack.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/cookies.js"></script>
+    <script>
+      role()
+      getNews()
+    </script>
+  </body>
+</html>
