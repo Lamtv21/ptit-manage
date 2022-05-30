@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/share.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <title>Thông tin cá nhân</title>
+  </head>
+  <body>
+    <div class="contain">
+      <ul class="menu">
+        <li class="home">
+          <a href="/home">Trang chủ</a>
+        </li>
+        <li class="profile">
+          <a href="/profile">Thông tin cá nhân</a>
+        </li>
+        <li class="users">
+          <a href="/user-management">Quản lý tài khoản</a>
+        </li>
+        <li class="news">
+          <a href="/news">Quản lý bài viết</a>
+        </li>
+        <li onclick="logout()" class="logout">
+          <a href="">Đăng xuất</a>
+        </li>
+      </ul>
+      <div class="main">
+        <ul class="info">
+          <li class="detail-info">
+            <span>Họ:</span>
+            <input class="firstname" type="text" value="" />
+          </li>
+          <li class="detail-info">
+            <span>Tên:</span>
+            <input class="lastname" type="text" value="" />
+          </li>
+          <li class="detail-info">
+            <span>Email:</span>
+            <input readonly class="email" type="email" value="" />
+          </li>
+          <li class="detail-info">
+            <span>Địa chỉ:</span>
+            <input class="address" type="text" value="" />
+          </li>
+          <li class="detail-info">
+            <span>SĐT:</span>
+            <input class="phone-number" type="text" value="" />
+          </li>
+          <li class="detail-info">
+            <span>Giới tính:</span>
+            <input class="sex" type="text" value="" />
+          </li>
+          <li class="detail-info">
+            <span>Tuổi:</span>
+            <input class="age" type="text" value="" />
+          </li>
+          <li class="detail-info">
+            <button onclick="updateProfile()">Lưu</button>
+          </li>
+        </ul>
+        <div class="change-pass">
+          <p>Đổi mật khẩu:</p>
+          <input class="new-password" type="password" placeholder="Mật khẩu mới" />
+          <input class="confirm-password" type="password" placeholder="Nhập lại mật khẩu" />
+          <button onclick="changePassword()">Thay đổi</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.pack.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/cookies.js"></script>
+    <script>
+      role()
+      getProfile()
+    </script>
+  </body>
+</html>

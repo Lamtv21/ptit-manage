@@ -1,0 +1,40 @@
+.info{
+    list-style: none;
+    font-size: 20px;
+}
+.detail-info{
+    display: grid;
+    grid-template-columns: 200px 500px;
+    margin: 16px 0;
+    align-items: center;
+}
+
+input{
+    padding: 6px 16px;
+    font-size: 20px;
+}
+
+button{
+    padding: 6px 16px;
+    font-size: 20px;
+    background-color: rgb(6, 148, 42);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 140px;
+    opacity: 0.9;
+    margin-top: 20px;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+.radio-role{
+    display: flex;
+    gap: 60px;
+}
+
+h2{
+    margin: 36px;
+}

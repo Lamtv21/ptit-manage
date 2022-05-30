@@ -1,0 +1,53 @@
+.main{
+    padding: 8px 16px;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.add-user{
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    margin-right: 24px;
+}
+
+.add-user:hover{
+    color: blue;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr{
+    line-height: 28px;
+}
+
+td, th{
+    border: 1px solid grey;
+}
+
+th{
+    background-color: chocolate;
+    color: white;
+}
+
+.detail-user{
+    margin-right: 16px;
+}
+
+.detail-user:hover{
+    font-weight: 600;
+}

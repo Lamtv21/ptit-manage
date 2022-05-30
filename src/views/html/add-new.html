@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/share.css" />
+    <link rel="stylesheet" href="css/add-new.css" />
+    <title>Thêm bài viết</title>
+  </head>
+  <body>
+    <div class="contain">
+      <ul class="menu">
+        <li class="home">
+          <a href="/home">Trang chủ</a>
+        </li>
+        <li class="profile">
+          <a href="/profile">Thông tin cá nhân</a>
+        </li>
+        <li class="users">
+          <a href="/user-management">Quản lý tài khoản</a>
+        </li>
+        <li class="news">
+          <a href="/news">Quản lý bài viết</a>
+        </li>
+        <li onclick="logout()" class="logout">
+          <a href="">Đăng xuất</a>
+        </li>
+      </ul>
+      <div class="main">
+        <ul class="info">
+          <li class="detail-info">
+            <p>Tiêu đề:</p>
+            <input class="title-new" type="text" value="" placeholder="Tiêu đề bài viết" />
+          </li>
+          <li class="detail-info">
+            <p>Nội dung:</p>
+            <textarea id="content-new" name="w3review" rows="8" cols="50" placeholder="Nội dung bài viết"></textarea>
+          </li>
+          <li class="detail-info">
+            <p>Ảnh:</p>
+            <input class="img-new" type="text" value="" placeholder="Đường dẫn ảnh" />
+          </li>
+          <li class="detail-info">
+            <button onclick="createNew()" class="create">Tạo bài viết</button>
+            <button onclick="updateNew()" class="save">Lưu</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.pack.js"></script>
+    <script src="js/add-new.js"></script>
+    <script src="js/cookies.js"></script>
+    <script>
+      role()
+      var url = document.URL
+      if (url.endsWith('/add-new')) {
+        document.querySelector('.create').style.display = 'block'
+        document.querySelector('.save').style.display = 'none'
+      } else {
+        document.querySelector('.create').style.display = 'none'
+        document.querySelector('.save').style.display = 'block'
+        getDetailNew()
+      }
+    </script>
+  </body>
+</html>
